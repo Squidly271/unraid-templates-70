@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>discord-tickets</Name>
+  <Repository>eartharoid/discord-tickets</Repository>
+  <Registry>https://hub.docker.com/r/eartharoid/discord-tickets</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discordtickets.app/getting-started/</Support>
+  <Project>https://discordtickets.app</Project>
+  <Overview>The official build of Discord Tickets - an open-source ticket management bot for Discord.&#xD;
+&#xD;
+A free alternative to the premium and white-label plans of other ticket management bots.</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:8169]</WebUI>
+  <TemplateURL/>
+  <Icon>https://discordtickets.app/img/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1726380252</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="DISCORD_SECRET" Target="DISCORD_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DISCORD_TOKEN" Target="DISCORD_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ENCRYPTION_KEY" Target="ENCRYPTION_KEY" Default="" Mode="" Description="https://discordtickets.app/self-hosting/configuration/#encryption_key&#13;&#10;Go here and generate key" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="HTTP_TRUST_PROXY" Target="HTTP_TRUST_PROXY" Default="false" Mode="" Description="If you are running the bot behind a reverse proxy, set this to true (must be lowercase) to trust the X-Forwarded- headers." Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="SUPER" Target="SUPER" Default="319467558166069248" Mode="" Description="Change this to your Discord ID" Type="Variable" Display="always" Required="true" Mask="false">319467558166069248</Config>
+  <Config Name="HTTP_EXTERNAL" Target="HTTP_EXTERNAL" Default="" Mode="" Description="HTTP_EXTERNAL=https://tickets.example.com" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_CONNECTION_URL" Target="DB_CONNECTION_URL" Default="" Mode="" Description="mysql://user:password@host:port/database | postgresql://user:password@host:port/database&#13;&#10;" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_PROVIDER" Target="DB_PROVIDER" Default="mysql" Mode="" Description="mysql (recommended, use this for MariaDB too) | &#13;&#10;postgresql | &#13;&#10;sqlite" Type="Variable" Display="always" Required="true" Mask="false">mysql</Config>
+  <Config Name="HTTP_PORT" Target="HTTP_PORT" Default="8169" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false">8169</Config>
+  <Config Name

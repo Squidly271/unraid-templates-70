@@ -32,5 +32,5 @@ A free alternative to the premium and white-label plans of other ticket manageme
   <Config Name="DB_CONNECTION_URL" Target="DB_CONNECTION_URL" Default="" Mode="" Description="mysql://user:password@host:port/database | postgresql://user:password@host:port/database&#13;&#10;" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DB_PROVIDER" Target="DB_PROVIDER" Default="mysql" Mode="" Description="mysql (recommended, use this for MariaDB too) | &#13;&#10;postgresql | &#13;&#10;sqlite" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="HTTP_PORT" Target="HTTP_PORT" Default="8169" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
-  <Config Name="WebUI" Target="" Default="" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="WebUI" Target="8169" Default="8169" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="false" Mask="false"/>
 </Container>
